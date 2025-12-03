@@ -1,0 +1,353 @@
+/*reset*/
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+/*universal styles*/
+
+html{
+font-size: 62.5%;
+width: auto;
+
+
+}
+
+
+body { 
+    font-family:"poppins", sans-serif   ; 
+    background: #fff7e7; 
+    color: #000; 
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+/*hero section*/
+.hero {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+  text-align: center;
+  max-width: 700px;
+  margin: auto;
+}
+
+
+
+
+.hero h1 {
+  font-size: 7rem;
+  margin: 0 0 20px;
+  font-weight: 700;
+  color: #f17a0a;
+}
+
+
+.mission {
+  font-size: 1.2rem;
+  max-width: 550px;
+  margin-bottom: 25px;
+  line-height: 1.6;
+  font-weight: 500;
+}
+
+.cta-button {
+  margin-top: 1rem;
+  background-color: #f17a0a;
+  color: #fff;
+  border: none;
+  padding: 10px 25px;
+  font-size: 1.6rem;
+  border-radius: 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  box-shadow: 0 6px 12px rgba(255, 123, 0, 0.3);
+  
+}
+
+.cta-button:hover {
+  background: #f17a0a;
+  color: #fff;
+  transform: scale(1.01);
+  box-shadow: 0 10px 20px rgba(255, 123, 0, 0.4);
+}
+
+.side-arrow {
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  margin-top: 35px;
+  width: 40px;
+  animation: arrowMove 1s infinite ease-in-out;
+}
+
+
+.arrow-line {
+  width: 45px;
+  height: 5px;
+  background-color: #ff7b00;
+}
+
+.arrow-head {
+  width: 0;
+  height: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  border-left: 14px solid #ff7b00;
+}
+
+@keyframes arrowMove {
+  0% { transform: translateX(0); }
+  50% { transform: translateX(12px); }
+  100% { transform: translateX(0); }
+}
+
+
+.about {
+  font-size: 1rem;
+  max-width: 550px;
+  line-height: 1.6;
+  color: #444;
+}
+
+/* ——— header ——— */
+header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 2rem;
+  border-bottom: 2px solid #000;
+  gap: 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 5rem;
+  font-weight: 700;
+  color: #f17a0a;
+}
+
+header p {
+  font-size: 1.8rem;
+  font-weight: 400;
+  margin-top: -0.5rem;
+}
+.head-left {
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+
+/* ——— navigation ——— */
+nav {
+  text-decoration: none;
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+nav a {
+  text-decoration: none;
+  color: #000000;
+}
+
+nav a:hover {
+  text-decoration: underline;
+  color: #f17a0a;
+}
+
+/* ——— projects ——— */
+
+
+h3 {
+    font-size: 12rem;
+    text-align: center;
+    margin: 5rem;
+    color:#f17a0a
+}
+
+.project h2{
+    color: #f17a0a;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+
+}
+
+
+
+.projects { 
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: .5rem;
+     
+}
+.project { 
+    height: 85vh;
+    padding: 2rem;
+    text-decoration: none;  
+    display: block; 
+}
+.project:hover { 
+    -webkit-filter:  grayscale(25%) brightness(80%);
+
+}
+.projects p{
+  font-weight: 600;
+    font-size: 1.6rem;
+    line-height: 1.4;
+    max-width: 500px;}
+
+.project h2 { 
+    font-size: 4rem; 
+    margin-bottom: 1rem; 
+}
+.project-info {
+    margin: 5rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.project-info p {
+    margin: 0 auto;
+    margin-bottom: 5rem;
+    text-align: left;
+    max-width: 800px;
+}
+
+.image-column {
+    max-width: 600px;       
+    margin: 0 auto;         
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;              
+}
+
+.image-block img {
+    width: 100%;
+    border-radius: 12px;
+    border: #f17a0a solid 5px;   
+}
+
+.caption {
+    text-align: center;
+    font-size: 0.95rem;
+    color: #555;
+    margin-top: 0.5rem;
+}
+
+.project-info h2 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color:#f17a0a
+}
+
+/*project 1*/
+
+.project-1 { 
+    background-image: url(../img/bottle1.jpg); 
+    background-size: cover; 
+    background-position: center;
+    
+    
+}
+
+
+
+
+/*project 2*/
+
+.project-2 { 
+    background-image: url(../img/perspire1.jpg); 
+    background-size: cover; 
+    background-position: center;  
+}
+
+/*project 3*/
+
+.project-3 { 
+    background-image: url(../img/BlackMetalHeader2.jpg) ;
+    background-size: cover; 
+    background-position: center;
+    color: rgb(32, 32, 30);  
+}
+
+.projectThree img{
+  width: 700px;
+  height: auto; 
+} 
+
+/*contact page styles*/
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100vh;
+    margin: 5rem;
+    font-size: 1.8rem;
+    line-height: 1.6;
+    text-align: center;
+}
+
+.contact-info h3 {
+    font-size: 4rem;
+    margin-bottom: 2rem;
+    color:#f17a0a
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;
+}
+
+ul a{
+    font-weight: 500;
+    text-decoration: none;
+    color: #000000;
+}
+
+ul a:hover{
+    color:#f17a0a
+}
+
+.contact-info img{
+  margin: 20px;
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;          
+  object-fit: cover;            
+  position: relative;
+}
+
+/*resume page styles*/
+.resume {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin:2rem auto;
+    border: #000 solid 2px;
+    
+}
+
+/*footer styles*/
+
+
+footer {
+    text-align: center;
+    padding: 3rem;
+    border-top: 2px solid #000;
+    font-size: 1.4rem;
+    color: #666;
+}
